@@ -7,11 +7,11 @@ from app.notifications.notifications import Notifications
 
 if __name__ == "__main__":
     load_dotenv()
+    user = os.environ["RETROACHIEVEMENTS_USERNAME"]
     client = RetroAchievementsWebApiClient(
-        os.environ["RETROACHIEVEMENTS_USERNAME"],
+        user,
         os.environ["RETROACHIEVEMENTS_KEY"],
     )
-    user = "namelivia"
     data = client.GetUserSummary(user, 5)
     message = ""
     message += f"Usuario: {user}\n"
