@@ -1,0 +1,29 @@
+version: '3'
+services:
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: development
+    container_name: retroachievements-apprise
+    restart: unless-stopped
+    tty: true
+    working_dir: /app
+    expose:
+      - "80"
+    ports:
+      - "4444:4444"
+    volumes:
+      - ./:/app
+    command: [
+        "pipenv",
+        "run",
+        "pytest"
+    ]
+
+#Docker Networks
+networks:
+  default:
+    external:
+      name: local-development-network
