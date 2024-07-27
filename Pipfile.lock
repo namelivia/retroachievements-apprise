@@ -804,12 +804,12 @@
         },
         "pytest": {
             "hashes": [
-                "sha256:0fe75465746a643f2485f642edf5eb7af7918135177230471150409343f84a6b",
-                "sha256:a1b30492f2676b476266a87f6551345fb25c0484fb6d09c86aa2eb07b5f71c2f"
+                "sha256:4ba08f9ae7dcf84ded419494d229b48d0903ea6407b030eaec46df5e6a73bba5",
+                "sha256:c132345d12ce551242c87269de812483f5bcc87cdbb4722e48487ba194f9fdce"
             ],
             "index": "pypi",
             "markers": "python_version >= '3.8'",
-            "version": "==8.3.0"
+            "version": "==8.3.2"
         },
         "pytest-cov": {
             "hashes": [
