@@ -17,7 +17,7 @@ services:
     volumes:
       - ./:/app
     command: [
-        "pipenv",
+        "poetry",
         "run",
         "pytest"
     ]
